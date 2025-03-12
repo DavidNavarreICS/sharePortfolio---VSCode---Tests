@@ -13,7 +13,7 @@ import java.util.Objects;
  * @author perussel
  */
 public abstract class Action {
-    
+
     private String libelle;
 
     /**
@@ -25,12 +25,12 @@ public abstract class Action {
         return libelle;
     }
 
-    public Action(String libelle) {
+    public Action(final String libelle) {
         this.libelle = libelle;
     }
 
     public abstract float valeur(Jour j);
-    
+
     @Override
     public int hashCode() {
         int hash = 3;
